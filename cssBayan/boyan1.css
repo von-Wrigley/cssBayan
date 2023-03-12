@@ -136,7 +136,6 @@ h4 {
 
 
 
-
 @media 
   (max-device-width:  820px) 
   and (min-device-width:  321px) { 
@@ -218,8 +217,8 @@ h4 {
 
 
 @media 
-  (max-device-width:  320)
-  and (max-device-height:  568px) { 
+  (max-device-width:  320px)
+   { 
 
 
 
@@ -307,7 +306,6 @@ h4 {
 
 
   }
-
 
 
 
