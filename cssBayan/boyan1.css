@@ -6,11 +6,8 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items:flex-start;
-   
     max-width: 50rem;
-    
-    
-    gap: 15px;
+    gap: 1rem;
     margin: auto;
 }
 
@@ -19,35 +16,6 @@ h1 {
 }
 
 
-/*.image {
-    transform: scale(1.2, 1.2);
-    display: none;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    margin: 0 auto;
-}
-
-.block:hover .image {
-    
-    display: block;
-   background-color: rgb(190, 58, 172);
-   transform: scale(1.5);
-  
-   margin: 0 auto;
-   margin-top: 10%;
-   margin-bottom: 10%;
-   padding-top: 0%;
-}
-
-.blockFirst .image{
-    display: block !important;
-    background-color: rgb(58, 190, 109);
-    margin: 0 auto;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    padding-top: 0%;
-    
- }*/
 
 .image {
     
@@ -62,7 +30,7 @@ h1 {
      margin: 0 auto;
      margin-top: 10%;
      margin-bottom: 10%;
-     padding: 4px;
+     padding: 0.4em;
      display: block;
      animation: fade_in_show 0.5s;
     
@@ -102,16 +70,16 @@ h4 {
     color: rgb(93, 93, 219);
     font-size: 3rem;
     
-    padding: 6px 5px;
-    padding-top: 19px;
-    margin-bottom: 11px;
+    padding: 0.4rem 0.3rem;
+    padding-top: 1.1rem;
+    margin-bottom:  0.7rem;
     
     margin-top: 0%;
 
 }
 .block {
     
-    margin-bottom: 10px;
+    margin-bottom:  0.6rem;
     width: 50rem;
     border-top: solid rgb(221, 212, 212);
     display: flex;
@@ -133,7 +101,6 @@ h4 {
 
 .container:hover .fa-plus {
     display: block !important;
-    background-color: blanchedalmond;
 }
 .block:hover .fa-xmark {
     display: block !important;
@@ -170,33 +137,29 @@ h4 {
 
 
 
-
-
-
-
 @media 
-  (max-device-width:  820px)
-  and (max-device-height:  1180px) { 
+  (max-device-width:  820px) 
+  and (min-device-width:  321px) { 
 
 
 
     body {
-        background-color: red;
+    
+       background-color: rgba(128, 128, 128, 0.212);
+        
     }
     .container {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items:flex-start;
-        background-color: aqua;
         max-width: 50rem;
         margin: auto;
-        
         gap: 1rem;
     }
     
     h1 {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
     
     .image {
@@ -208,65 +171,21 @@ h4 {
       display: none;
       
     }
-    
-    .block:hover .image {
-       background-color: rgb(190, 58, 172);
-       margin: 0 auto;
-       margin-top: 10%;
-       margin-bottom: 10%;
-       padding: 4px;
-       display: block;
-       transform: scale(1.2);
-       opacity: 1;
-      
-
-    }
-    
-    
-
-
-
-
-
-   /* div:nth-child(2) .image {
-        
-       display: block;
-       background-color: rgb(58, 190, 109);
-       transform: scale(1.2, 1.2);
-      
-       margin: 0 auto;
-       margin-top: 10%;
-       margin-bottom: 10%;
-       padding-top: 0%;
-       
-    
-       
-    }*/
-    
-    
-p {
-        visibility:hidden;
-    }
-    
-   
-    
    
 h4 {
         color: rgb(93, 93, 219);
-        font-size: 2rem;
-        background-color: antiquewhite;
-        padding: 6px 5px;
-        padding-top: 19px;
-        margin-bottom: 11px;
-        
+        font-size: 2.5rem;
+        padding: 0.4rem 0.3rem;
+        padding-top: 1.1rem;
+        margin-bottom:  0.7rem;
         margin-top: 0%;
     
     }
 .block {
-        background-color: red;
-        margin-bottom: 10px;
+
+        margin-bottom: 1rem;
         width: 50rem;
-        border-top: solid rgb(221, 212, 212);
+        border-top: 0.5em solid rgb(221, 212, 212);
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -278,47 +197,120 @@ h4 {
         justify-content: space-between;
         align-items: center;
     }
-.fa-plus {
-        padding: 2% 2%;
-        display: none !important;
-    }
-    
-.container:hover .fa-plus {
-        display: block !important;
-        background-color: blanchedalmond;
-    }
-.block:hover .fa-xmark {
-        display: block !important;
-    }
-.block:hover .fa-plus {
-        display: none !important;
-    }
+
 .fa-xmark {
         padding: 2% 2%;
         display: none !important;
     }
 .block:focus .image{
-        display: block;
-        background-color: yellow;
-        
+        display: block !important;
+        opacity: 1;
         margin: 0 auto;
-       margin-top: 10%;
-       margin-bottom: 10%;
-       
-        }
-    
-    
-    
-.block:focus h4 {
+        margin-top: 10%;
+        margin-bottom: 10%;
+        transform: scale(1);
+    }
+
+ .block:focus h4 {
         color: aquamarine;
+    }
+}
+
+
+@media 
+  (max-device-width:  320)
+  and (max-device-height:  568px) { 
+
+
+
+    body {
+    
+       background-color: rgba(128, 128, 128, 0.212);
+       
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items:flex-start;
+        max-width: 50rem;
+        margin: auto;
+        gap: 1rem;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    .image {
+    margin: 0 auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+     
+      transform: scale(0);
+      opacity: 0;
+      transition: transform .3s ease-in-out, opacity .3s ease-in-out;
+      display: none;
+      padding-left: 30%;
+      
+      padding: 1rem 1rem;
+      
+    }
+   
+h4 {
+        color: rgb(93, 93, 219);
+        font-size: 2rem;
+        padding: 0.4rem 0.3rem;
+        padding-top: 1.1rem;
+        margin-bottom:  0.7rem;
+        margin-top: 0%;
+    
+    }
+.block {
+
+        margin-bottom: 1rem;
+        width: 40rem;
+        border-top:  solid rgb(221, 212, 212);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    
+    }
+.block-header {
+        display: inline-flex;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+.fa-xmark {
+        padding: 2% 2%;
+        display: none !important;
+    }
+.block:focus .image{
+        display: block !important;
+        opacity: 1;
+        margin: 0 auto;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        transform: scale(1);
+        padding: 1rem 1rem;
+       
+        
+    }
+
+.block:focus h4 {
+        color: rgb(235, 174, 61);
     }
     
 
 
 
+  }
 
 
 
 
 
-}
+
+
